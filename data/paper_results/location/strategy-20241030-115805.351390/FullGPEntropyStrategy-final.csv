@@ -1,0 +1,2 @@
+,entropy_initial,KL_initial_to_final,KL_initial_to_true,entropy_final,KL_final_to_initial,KL_final_to_true,entropy_true,KL_true_to_initial,KL_true_to_final
+0,-inf,0.22583082412741637,0.48162863924183175,5.605057972863907,0.20168610780626017,0.44873739567177845,2.745336932239394,1.6733876344758938,1.831696337792043

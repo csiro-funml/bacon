@@ -1,0 +1,46 @@
+FullGPVariationalStrategy:
+  conditional:
+    type: Zuko
+    activation: ReLU
+    encoding_d: 8
+    n_hidden: 32
+    n_layers: 2
+    n_transforms: 10
+    flow_type: NSF
+  lr_factor: 50
+  n_restarts: 1
+  n_steps: 800
+  optim: Adam
+  optim_args:
+    lr: 0.001
+  scheduler: "CosineAnnealingWarmRestarts"
+  scheduler_args:
+    T_0: 50
+    T_mult: 2
+  condition_on_all_data: false
+  condition_on_inputs: true
+  use_reg: false
+  use_mcmc_samples: true
+  stopping_tol: 1.0e-6
+  stopping_window: 100
+  split_training: false
+
+FullGPIMSPEStrategy:
+  optim_args:
+    lr: 0.005
+  scheduler_args:
+    gamma: 0.99
+  n_steps: 800
+  lr_factor: 10
+  n_restarts: 1
+  stopping_window: 400
+  resample_integration: true
+
+FullGPEntropyStrategy:
+  optim_args:
+    lr: 0.005
+  scheduler_args:
+    gamma: 0.99
+  n_steps: 800
+  n_restarts: 1
+  stopping_window: 200

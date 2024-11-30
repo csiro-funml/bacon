@@ -1,0 +1,17 @@
+algorithm: Variational Bayesian Monte Carlo
+best_iter: 6
+components: 50
+convergence_status: 'no'
+elbo: -5.175517067866082
+elbo_sd: 0.031216508139689635
+func_count: 45
+function: <baed4cal.strategies.vbmc.VBMCTarget object at 0x155484f45550>
+iterations: 7
+message: 'Inference terminated: reached maximum number of function evaluations options.max_fun_evals.'
+overhead: .nan
+problem_type: unconstrained
+r_index: 0.21598853119152353
+rng_state: rng
+success_flag: false
+train_set_size: 40
+version: 1.0.4

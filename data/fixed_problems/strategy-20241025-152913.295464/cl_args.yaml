@@ -1,0 +1,26 @@
+device: cpu
+dimension: 2
+memory: 32
+n_assessment: 4000
+n_batch: 4
+n_chains: 20
+n_cpus: 24
+n_inducing: 256
+n_init: 20
+n_iterations: 50
+n_real: 5
+n_samples: 256
+n_test: 100
+name: null
+output_directory: experiments/S-256-T-50-R-5-B-4-I-20-D-2-SetCNF-KOHSyntheticGPProblem-MCMC-test-old-new/
+posterior_samples: null
+problem_class: KOHSyntheticGPProblem
+seed: null
+strategy:
+- FullGPVariationalStrategy
+- FullGPIMSPEStrategy
+- FullGPRandomStrategy
+- VBMC
+strategy_settings: config/strategy-test-old-new.yaml
+timeout: 480
+true_theta: null
