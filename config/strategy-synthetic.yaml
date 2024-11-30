@@ -1,0 +1,34 @@
+FullGPVariationalStrategy:
+  conditional:
+    type: SetCNF
+    activation: Tanh
+    encoding_d: 8
+    n_hidden: 32
+    n_layers: 2
+    n_transforms: 2
+    flow_type: Spline
+  lr_factor: 50
+  n_restarts: 1
+  n_steps: 200
+  optim: Adam
+  optim_args:
+    lr: 0.001
+  scheduler: "CosineAnnealingWarmRestarts"
+  scheduler_args:
+    T_0: 50
+    T_mult: 2
+  condition_on_all_data: true
+  condition_on_inputs: true
+  use_reg: false
+  use_mcmc_samples: true
+  stopping_window: 200
+
+FullGPIMSPEStrategy:
+  optim_args:
+    lr: 0.005
+  scheduler_args:
+    gamma: 0.99
+  n_steps: 400
+  lr_factor: 10
+  n_restarts: 1
+  stopping_window: 400
