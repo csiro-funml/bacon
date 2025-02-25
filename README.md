@@ -1,6 +1,6 @@
 # BACON
 
-Code repository for paper titled "Bayesian adaptive calibration and optimal design" (BACON) accepted at NeurIPS 2024.
+Code repository for the paper titled "Bayesian adaptive calibration and optimal design" (BACON) presented at the 38th Conference on Neural Information Processing Systems (NeurIPS 2024) by Rafael Oliveira, Dino Sejdinovic, David Howard and Edwin V. Bonilla.
 
 ## Abstract
 
@@ -11,9 +11,22 @@ distributions. We, instead, model a simulator as a sample from a Gaussian proces
 input, which can then be inferred via variational inference methods. A lower bound on the expected information gain allows for
 joint optimisation of both the design inputs and the variational posterior during the sequential experimentation process.
 
-## Preprint
+## Publication
 
-A preprint is currently available on ArXiv as [2405.14440](https://arxiv.org/abs/).
+The preprint is available on ArXiv as [2405.14440](https://arxiv.org/abs/), and the full paper has been recently published with the [NeurIPS 2024 proceedings](https://papers.neurips.cc/paper_files/paper/2024/hash/673b9f8cba4ee9f15b88656a69761631-Abstract-Conference.html). Citation information is available with its BibTex entry:
+```bibtex
+@inproceedings{NEURIPS2024_673b9f8c,
+ author = {Oliveira, Rafael and Sejdinovic, Dino and Howard, David and Bonilla, Edwin V},
+ booktitle = {Advances in Neural Information Processing Systems},
+ editor = {A. Globerson and L. Mackey and D. Belgrave and A. Fan and U. Paquet and J. Tomczak and C. Zhang},
+ pages = {56526--56551},
+ publisher = {Curran Associates, Inc.},
+ title = {Bayesian Adaptive Calibration and Optimal Design},
+ url = {https://proceedings.neurips.cc/paper_files/paper/2024/file/673b9f8cba4ee9f15b88656a69761631-Paper-Conference.pdf},
+ volume = {37},
+ year = {2024}
+}
+```
 
 ## Experiments data
 
